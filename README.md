@@ -61,7 +61,17 @@ cd /sdcard && git clone https://github.com/Powerapis/Lady-bot-v4.4.git
 ````
 5 - COMANDO: 🐞
 ````bash
-cd /sdcard/HutaoBot-MD && npm start
+sh install.sh
+````
+6 - COMANDO: 🐞
+````bash
+yarn install
+ou
+npm install
+````
+7 - COMANDO: 🐞
+````bash
+cd /sdcard/Lady-bot-free-main && sh start.sh
 ````
 > Use-o para toda vez que for ligar o bot!
 ------------------
@@ -75,7 +85,7 @@ cd /sdcard/HutaoBot-MD && npm start
 ## Features
 
 - **Desempenho:** Projeto focado em rapidez e baixo consumo de recursos. Com uma source altamente projetada para evitar consumo excessivo de CPU e memória;
-- **Comandos:** HutaoBot-MD contém todos os comando 100% gratuitos e funcionais. Algums podem apresentar falhas, mas iremos corrigir o mais rápido possível;
+- **Comandos:** ladybot-MD contém todos os comando 100% gratuitos e funcionais. Algums podem apresentar falhas, mas iremos corrigir o mais rápido possível;
 - **Uso:** Fácil de usar, e rápida em processo de dados.
 - **Configuração e segurança**: Você pode programar o bot para enviar uma mensagem específica. E também manter a segurança de seu grupo com algums sistemas disponíveis.
 ## License
