@@ -1,0 +1,53 @@
+exports.menuseries = (comando, prefix, hora, data, pushname, totalcmd) => {
+return `
+╭───────────────╮
+│     📺𝐒𝐄𝐑𝐈𝐄𝐒📽️
+╰───────────────╯
+╭────────────────╮
+│${prefix}Serie1 (Arcane)
+│${prefix}Serie2 (Stranger Things)
+│${prefix}Serie3 (Soldados ou Zumbis)
+│${prefix}Serie4 (Senhor dos Anéis)
+│${prefix}Serie5 (Riverdale)
+│${prefix}Serie6 (A casa do dragão)
+│${prefix}Serie7 (Sintonia)
+│${prefix}Serie8 (Chucky)
+│${prefix}Serie9 (Flash)
+│${prefix}Serie10 (Game of Thrones)
+│${prefix}Serie11 (Legados)
+│${prefix}Serie12 (The Good Doctor)
+│${prefix}Serie13 (The Walking Dead)
+│${prefix}Serie14 (Peaky Blinders)
+│${prefix}Serie15 (Diários de um Vampiro)
+│${prefix}Serie16 (Gavião Arqueiro)
+│${prefix}Serie17 (Westworld)
+│${prefix}Serie18 (Lúcifer)
+│${prefix}Serie19 (Lobo Adolescente)
+│${prefix}Serie20 (La Casa de Papel)
+│${prefix}Serie21 (Cobra Kai)
+│${prefix}Serie22 (Love Victor)
+│${prefix}Serie23 (Vikings)
+│${prefix}Serie24 (Cavaleiro da Lua)
+│${prefix}Serie25 (Fear The Walking Dead)
+│${prefix}Serie26 (Rick Morty)
+│${prefix}Serie27 (Round 6)
+│${prefix}Serie28 (Carnival Row)
+│${prefix}Serie29 (Dark)
+│${prefix}Serie30 (Arqueiro)
+│${prefix}Serie31 (Eu Nunca)
+│${prefix}Serie32 (The Last Kingdom)
+│${prefix}Serie33 (O livro de Boba Fett)
+│${prefix}Serie34 (Ragnarok)
+│${prefix}Serie35 (OS 100)
+│${prefix}Serie36 (FBI)
+│${prefix}Serie37 (Extracurricular)
+│${prefix}Serie38 (Halo)
+│${prefix}Serie39 (Warrior Nun)
+│${prefix}Serie40 (Anne With)
+│${prefix}Serie41 (Patrulha do destino)
+│${prefix}Serie42 (Dinastia)
+│${prefix}Serie43 (Watchmen)
+│${prefix}Serie44 (Lovecraft Country)
+╰─────────────────
+`
+ }

@@ -1,0 +1,103 @@
+[
+  {
+    "id": 1,
+    "categoria": "Animais",
+    "piada": "O que o pato disse para a pata? Vem Quá!"
+  },
+  {
+    "id": 2,
+    "categoria": "Comida",
+    "piada": "O que o tomate foi fazer no banco? Foi tirar extrato!"
+  },
+  {
+    "id": 3,
+    "categoria": "Esportes",
+    "piada": "Qual o cúmulo da preguiça no futebol? O jogador chutar a bola e ir buscar água enquanto ela vai rolando."
+  },
+  {
+    "id": 4,
+    "categoria": "Profissões",
+    "piada": "O que o advogado do tomate disse no tribunal? Ele é inocente, ele não fez nada!"
+  },
+  {
+    "id": 5,
+    "categoria": "Escola",
+    "piada": "Qual o animal que come com o rabo? Todos, porque nenhum tira o rabo para comer!"
+  },
+  {
+    "id": 6,
+    "categoria": "Tecnologia",
+    "piada": "O que o computador disse para o outro? Eu te amo bits!"
+  },
+  {
+    "id": 7,
+    "categoria": "Música",
+    "piada": "Qual o cúmulo da preguiça na música? O cantor desafinar e mandar a culpa para o maestro!"
+  },
+  {
+    "id": 8,
+    "categoria": "Cinema",
+    "piada": "Qual o filme preferido do bombeiro? Incêndio em Chicago!"
+  },
+  {
+    "id": 9,
+    "categoria": "Política",
+    "piada": "Qual o animal que mais mente? O político, porque ele promete e nunca cumpre!"
+  },
+  {
+    "id": 10,
+    "categoria": "Geografia",
+    "piada": "Qual o estado brasileiro que mais gosta de música? O Rio de Janeiro, porque ele tem samba!"
+  },
+  {
+    "id": 11,
+    "categoria": "História",
+    "piada": "Qual o cúmulo da preguiça na história? Napoleão Bonaparte conquistar a Europa e depois ficar parado na Rússia!"
+  },
+  {
+    "id": 12,
+    "categoria": "Matemática",
+    "piada": "Qual o animal que come com o nariz? Todos, porque nenhum tira o nariz para comer!"
+  },
+  {
+    "id": 13,
+    "categoria": "Ciência",
+    "piada": "Qual o cúmulo da preguiça na ciência? O cientista inventar a preguiça!"
+  },
+  {
+    "id": 14,
+    "categoria": "Lógica",
+    "piada": "Qual o cúmulo da preguiça na lógica? O filósofo pensar e não chegar a nenhuma conclusão!"
+  },
+  {
+    "id": 15,
+    "categoria": "Filosofia",
+    "piada": "Qual o cúmulo da preguiça na filosofia? O pensador pensar e não fazer nada!"
+  },
+  {
+    "id": 16,
+    "categoria": "Religião",
+    "piada": "Qual o cúmulo da preguiça na religião? O padre rezar a missa e depois ir dormir!"
+  },
+  {
+    "id": 17,
+    "categoria": "Mitologia",
+    "piada": "Qual o cúmulo da preguiça na mitologia? O Hércules lutar contra 12 trabalhos e depois descansar!"
+  },
+  {
+    "id": 18,
+    "categoria": "Famosos",
+    "piada": "Qual o cúmulo da preguiça na fama? O cantor ficar famoso e depois se aposentar!"
+  },
+  {
+    "id": 19,
+    "categoria": "Dinheiro",
+    "piada": "Qual o cúmulo da preguiça no dinheiro? O rico ficar rico e depois não gastar o dinheiro!"
+  },
+  {
+    "id": 20,
+    "categoria": "Amor",
+    "piada": "Qual o cúmulo da preguiça no amor? O casal se apaixonar e depois não namorar!"
+  }
+  
+  ]

@@ -1,0 +1,419 @@
+[
+  {
+    "id": 1,
+    "categoria": "Animais",
+    "piada": "O que o pato disse para a pata? Vem Quá!"
+  },
+  {
+    "id": 2,
+    "categoria": "Comida",
+    "piada": "O que o tomate foi fazer no banco? Foi tirar extrato!"
+  },
+  {
+    "id": 3,
+    "categoria": "Esportes",
+    "piada": "Qual o cúmulo da preguiça no futebol? O jogador chutar a bola e ir buscar água enquanto ela vai rolando."
+  },
+  {
+    "id": 4,
+    "categoria": "Profissões",
+    "piada": "O que o advogado do tomate disse no tribunal? Ele é inocente, ele não fez nada!"
+  },
+  {
+    "id": 5,
+    "categoria": "Escola",
+    "piada": "Qual o animal que come com o rabo? Todos, porque nenhum tira o rabo para comer!"
+  },
+  {
+    "id": 6,
+    "categoria": "Tecnologia",
+    "piada": "O que o computador disse para o outro? Eu te amo bits!"
+  },
+  {
+    "id": 7,
+    "categoria": "Música",
+    "piada": "Qual o cúmulo da preguiça na música? O cantor desafinar e mandar a culpa para o maestro!"
+  },
+  {
+    "id": 8,
+    "categoria": "Cinema",
+    "piada": "Qual o filme preferido do bombeiro? Incêndio em Chicago!"
+  },
+  {
+    "id": 9,
+    "categoria": "Política",
+    "piada": "Qual o animal que mais mente? O político, porque ele promete e nunca cumpre!"
+  },
+  {
+    "id": 10,
+    "categoria": "Geografia",
+    "piada": "Qual o estado brasileiro que mais gosta de música? O Rio de Janeiro, porque ele tem samba!"
+  },
+  {
+    "id": 11,
+    "categoria": "História",
+    "piada": "Qual o cúmulo da preguiça na história? Napoleão Bonaparte conquistar a Europa e depois ficar parado na Rússia!"
+  },
+  {
+    "id": 12,
+    "categoria": "Matemática",
+    "piada": "Qual o animal que come com o nariz? Todos, porque nenhum tira o nariz para comer!"
+  },
+  {
+    "id": 13,
+    "categoria": "Ciência",
+    "piada": "Qual o cúmulo da preguiça na ciência? O cientista inventar a preguiça!"
+  },
+  {
+    "id": 14,
+    "categoria": "Lógica",
+    "piada": "Qual o cúmulo da preguiça na lógica? O filósofo pensar e não chegar a nenhuma conclusão!"
+  },
+  {
+    "id": 15,
+    "categoria": "Filosofia",
+    "piada": "Qual o cúmulo da preguiça na filosofia? O pensador pensar e não fazer nada!"
+  },
+  {
+    "id": 16,
+    "categoria": "Religião",
+    "piada": "Qual o cúmulo da preguiça na religião? O padre rezar a missa e depois ir dormir!"
+  },
+  {
+    "id": 17,
+    "categoria": "Mitologia",
+    "piada": "Qual o cúmulo da preguiça na mitologia? O Hércules lutar contra 12 trabalhos e depois descansar!"
+  },
+  {
+    "id": 18,
+    "categoria": "Famosos",
+    "piada": "Qual o cúmulo da preguiça na fama? O cantor ficar famoso e depois se aposentar!"
+  },
+  {
+    "id": 19,
+    "categoria": "Dinheiro",
+    "piada": "Qual o cúmulo da preguiça no dinheiro? O rico ficar rico e depois não gastar o dinheiro!"
+  },
+  {
+    "id": 20,
+    "categoria": "Amor",
+    "piada": "Qual o cúmulo da preguiça no amor? O casal se apaixonar e depois não namorar!"
+  },
+  {
+    "id": 1,
+    "categoria": "Animais",
+    "piada": "O que o pato disse para a pata? Vem QuÃ¡!"
+  },
+  {
+    "id": 2,
+    "categoria": "Comida",
+    "piada": "O que o tomate foi fazer no banco? Foi tirar extrato!"
+  },
+  {
+    "id": 3,
+    "categoria": "Esportes",
+    "piada": "Qual o cÃºmulo da preguiÃ§a no futebol? O jogador chutar a bola e ir buscar Ã¡gua enquanto ela vai rolando."
+  },
+  {
+    "id": 4,
+    "categoria": "ProfissÃµes",
+    "piada": "O que o advogado do tomate disse no tribunal? Ele Ã© inocente, ele nÃ£o fez nada!"
+  },
+  {
+    "id": 5,
+    "categoria": "Escola",
+    "piada": "Qual o animal que come com o rabo? Todos, porque nenhum tira o rabo para comer!"
+  },
+  {
+    "id": 6,
+    "categoria": "Animais",
+    "piada": "Por que o esqueleto nÃ£o briga com ninguÃ©m? Porque ele nÃ£o tem estÃ´mago para isso!"
+  },
+  {
+    "id": 7,
+    "categoria": "Comida",
+    "piada": "Qual Ã© o rei dos queijos? O reiqueijÃ£o."
+  },
+  {
+    "id": 8,
+    "categoria": "Esportes",
+    "piada": "O que o pÃ¡ssaro disse para o jogador de futebol? Bico!"
+  },
+  {
+    "id": 9,
+    "categoria": "ProfissÃµes",
+    "piada": "Como se chama um elevador cheio de advogados? ReuniÃ£o de trabalho!"
+  },
+  {
+    "id": 10,
+    "categoria": "Escola",
+    "piada": "Por que o livro de matemÃ¡tica estÃ¡ sempre tenso? Porque tem muitos problemas."
+  },
+  {
+    "id": 11,
+    "categoria": "Animais",
+    "piada": "O que o peixe falou para o outro? Nada, peixe nÃ£o fala."
+  },
+  {
+    "id": 12,
+    "categoria": "Comida",
+    "piada": "Qual Ã© o legume mais namorador? O chuchu, porque ele sempre estÃ¡ de casamento marcado."
+  },
+  {
+    "id": 13,
+    "categoria": "Esportes",
+    "piada": "Por que o jogador de futebol foi para a escola? Para melhorar o seu driblando."
+  },
+  {
+    "id": 14,
+    "categoria": "ProfissÃµes",
+    "piada": "O que o bombeiro foi fazer na igreja? Apagar o fogo do inferno!"
+  },
+  {
+    "id": 15,
+    "categoria": "Escola",
+    "piada": "Por que o caderno ficou de castigo? Porque estava colando."
+  },
+  {
+    "id": 16,
+    "categoria": "Animais",
+    "piada": "O que aconteceu com o cachorro que engoliu um repelente? Ele ficou antipulga."
+  },
+  {
+    "id": 17,
+    "categoria": "Comida",
+    "piada": "Por que o pÃ£o nÃ£o pode ir Ã  festa? Porque ele fica amassado!"
+  },
+  {
+    "id": 18,
+    "categoria": "Esportes",
+    "piada": "Qual Ã© o jogador mais respeitoso? O goleiro, porque ele sempre defende os outros."
+  },
+  {
+    "id": 19,
+    "categoria": "ProfissÃµes",
+    "piada": "O que o astronauta falou para o mÃ©dico? Doutor, estou no espaÃ§o!"
+  },
+  {
+    "id": 20,
+    "categoria": "Escola",
+    "piada": "O que a matemÃ¡tica disse para a biologia? 'Vamos nos encontrar nos nÃºmeros.'"
+  },
+  {
+    "id": 21,
+    "categoria": "Animais",
+    "piada": "O que o jacarÃ© foi fazer na farmÃ¡cia? Comprar um remÃ©dio para o mau hÃ¡lito."
+  },
+  {
+    "id": 22,
+    "categoria": "Comida",
+    "piada": "Qual Ã© o tempero mais rebelde? O alho, porque ele nunca se conforma!"
+  },
+  {
+    "id": 23,
+    "categoria": "Esportes",
+    "piada": "Por que o time de futebol foi para a escola? Para aprender a fazer gols!"
+  },
+  {
+    "id": 24,
+    "categoria": "ProfissÃµes",
+    "piada": "O que o padeiro disse para o bolo? 'VocÃª estÃ¡ uma massa!'"
+  },
+  {
+    "id": 25,
+    "categoria": "Escola",
+    "piada": "Por que a vassoura foi para a escola? Para se aprimorar nas variaÃ§Ãµes!"
+  },
+  {
+    "id": 26,
+    "categoria": "Animais",
+    "piada": "O que o gato falou para o rato? 'VocÃª rÃ³i demais, preciso de fÃ©rias!'"
+  },
+  {
+    "id": 27,
+    "categoria": "Comida",
+    "piada": "Por que o garfo nÃ£o pode ter segredos? Porque sempre estÃ¡ dando 'furos'!"
+  },
+  {
+    "id": 28,
+    "categoria": "Esportes",
+    "piada": "Qual Ã© o esporte mais democrÃ¡tico? O vÃ´lei, porque todos tÃªm o direito de dar uma 'cortada'!"
+  },
+  {
+    "id": 29,
+    "categoria": "ProfissÃµes",
+    "piada": "Por que o pintor Ã© tÃ£o calmo? Porque ele estÃ¡ sempre dando pinceladas!"
+  },
+  {
+    "id": 30,
+    "categoria": "Escola",
+    "piada": "O que o lÃ¡pis falou para o papel? 'Estou desenhando muitas histÃ³rias contigo!'"
+  },
+  {
+    "id": 31,
+    "categoria": "Animais",
+    "piada": "O que a abelha disse para a flor? 'Gosto de vocÃª, mas nÃ£o me meloso demais!'"
+  },
+  {
+    "id": 32,
+    "categoria": "Comida",
+    "piada": "Por que o pÃ£o sempre estÃ¡ sorrindo? Porque Ã© amassadinho, mas feliz!"
+  },
+  {
+    "id": 1,
+    "categoria": "Animais",
+    "piada": "Por que o pÃ¡ssaro nÃ£o usa redes sociais? Porque ele jÃ¡ tem muitos tweets!"
+  },
+  {
+    "id": 2,
+    "categoria": "Animais",
+    "piada": "O que a minhoca falou para a cobra? 'VocÃª Ã© cega, nÃ£o vÃª que estou na minha?!"
+  },
+  {
+    "id": 3,
+    "categoria": "Animais",
+    "piada": "Por que o cavalo fez uma dieta? Ele queria entrar no grupo dos 'cavaleiros magros'!"
+  },
+  {
+    "id": 4,
+    "categoria": "Animais",
+    "piada": "O que a ovelha faz quando estÃ¡ entediada? Conta carneirinhos!"
+  },
+  {
+    "id": 5,
+    "categoria": "Animais",
+    "piada": "Por que o gato Ã© pÃ©ssimo em jogos de tabuleiro? Porque sempre derruba as peÃ§as!"
+  },
+  {
+    "id": 6,
+    "categoria": "Animais",
+    "piada": "O que o peixe disse para o tubarÃ£o? 'VocÃª estÃ¡ me enrolando demais!'"
+  },
+  {
+    "id": 7,
+    "categoria": "Animais",
+    "piada": "Por que a cegonha nÃ£o usa celular? Porque ela jÃ¡ tem um bico!"
+  },
+  {
+    "id": 8,
+    "categoria": "Animais",
+    "piada": "O que a aranha disse para a mosca? 'Vem dar uma volta, te faÃ§o voar!'"
+  },
+  {
+    "id": 9,
+    "categoria": "Animais",
+    "piada": "Qual o animal mais antigo? A zebra, porque estÃ¡ em preto e branco desde sempre!"
+  },
+  {
+    "id": 10,
+    "categoria": "Animais",
+    "piada": "O que aconteceu com a formiga que caiu no cafÃ©? Ela se dissolveu e virou cafÃ© formiga!"
+  },
+  {
+    "id": 11,
+    "categoria": "Animais",
+    "piada": "Por que o cachorro atravessou a rua? Para chegar do outro lado e latir 'Eu consegui!'"
+  },
+  {
+    "id": 12,
+    "categoria": "Animais",
+    "piada": "O que o pato falou para a pata antes de se despedir? 'Vou dar um mergulho, atÃ© debaixo d'Ã¡gua!'"
+  },
+  {
+    "id": 13,
+    "categoria": "Animais",
+    "piada": "Por que a girafa tem um pescoÃ§o tÃ£o grande? Porque suas pernas sÃ£o longas!"
+  },
+  {
+    "id": 14,
+    "categoria": "Animais",
+    "piada": "O que a abelha disse para a outra que estava atrasada? 'Vamos logo, senÃ£o a rainha vai zangar!'"
+  },
+  {
+    "id": 15,
+    "categoria": "Animais",
+    "piada": "Por que o leÃ£o nÃ£o gosta de jogar baralho na selva? Porque lÃ¡ tem muitos gatos!"
+  },
+  {
+    "id": 16,
+    "categoria": "Animais",
+    "piada": "O que o cavalo foi fazer na padaria? Comer um pÃ£o de estÃ¡bulo!"
+  },
+  {
+    "id": 17,
+    "categoria": "Animais",
+    "piada": "Por que a pulga nunca estÃ¡ estressada? Porque ela sempre dÃ¡ pulos calmos!"
+  },
+  {
+    "id": 18,
+    "categoria": "Animais",
+    "piada": "O que o sapo disse para a rÃ£? 'VocÃª Ã© minha rainha!'"
+  },
+  {
+    "id": 19,
+    "categoria": "Animais",
+    "piada": "Por que o passarinho nÃ£o usa Facebook? Porque ele jÃ¡ tem muitos tweets na natureza!"
+  },
+  {
+    "id": 20,
+    "categoria": "Animais",
+    "piada": "O que o macaco disse para o banana? 'VocÃª estÃ¡ descascado demais!'"
+  },
+  {
+    "id": 21,
+    "categoria": "Animais",
+    "piada": "Por que o elefante nÃ£o usa computador? Porque ele tem medo do mouse!"
+  },
+  {
+    "id": 22,
+    "categoria": "Animais",
+    "piada": "O que a formiga disse para a pulga? 'Pula fora, isso nÃ£o Ã© trabalho para formigas!'"
+  },
+  {
+    "id": 23,
+    "categoria": "Animais",
+    "piada": "Por que o porco nÃ£o empresta dinheiro? Porque ele sempre fica 'suÃ­no'!"
+  },
+  {
+    "id": 24,
+    "categoria": "Animais",
+    "piada": "O que a tartaruga disse para a lebre? 'Devagar se vai ao longe, mas eu chego lÃ¡ primeiro!'"
+  },
+  {
+    "id": 25,
+    "categoria": "Animais",
+    "piada": "Por que o gato gosta de ficar deitado? Porque ele Ã© um 'ronromanticÃ£o'!"
+  },
+  {
+    "id": 26,
+    "categoria": "Animais",
+    "piada": "O que o pato falou para a pata quando ela fez uma piada ruim? 'VocÃª estÃ¡ me canardindo!'"
+  },
+  {
+    "id": 27,
+    "categoria": "Animais",
+    "piada": "Por que o cachorro nÃ£o usa o computador? Porque ele tem medo do mouse!"
+  },
+  {
+    "id": 28,
+    "categoria": "Animais",
+    "piada": "O que a galinha foi fazer na igreja? Assistir Ã  missa do galo!"
+  },
+  {
+    "id": 29,
+    "categoria": "Animais",
+    "piada": "Por que o papagaio nÃ£o vai Ã  escola? Porque ele jÃ¡ Ã© um 'poliglota'!"
+  },
+  {
+    "id": 30,
+    "categoria": "Animais",
+    "piada": "O que a aranha falou para a mosca? 'VocÃª estÃ¡ voando demais, me deixe te pegar!'"
+  },
+  {
+    "id": 31,
+    "categoria": "Animais",
+    "piada": "Por que a vaca foi para o espaÃ§o? Para encontrar a mu!"
+  }
+  
+  
+  ]
