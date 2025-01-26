@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.5.0",
+    "@whiskeysockets/baileys": "^6.7.9",
     "@adiwajshing/baileys": "",
     "async": "^3.2.3",
     "awesome-phonenumber": "^2.69.0",
