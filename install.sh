@@ -1,4 +1,4 @@
-#SANDRO BOT
+#LADY BOT V4.4
 
 pkg upgrade
 pkg update
