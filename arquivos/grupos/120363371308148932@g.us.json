@@ -17,7 +17,7 @@
     "anticatalogo": true,
     "sistemGold": false,
     "visuUnica": false,
-    "registrarFIGUS": false,
+    "registrarFIGUS": true,
     "soadm": false,
     "rg_aluguel": false,
     "listanegra": [],
