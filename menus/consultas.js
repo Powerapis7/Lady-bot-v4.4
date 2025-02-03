@@ -8,10 +8,13 @@ return `
 │${prefix}nome
 │${prefix}nome2
 │${prefix}telefone
+│${prefix}telefone2
 │${prefix}gerarcpff
 │${prefix}gerarpessoa
 │${prefix}gerarsenha
-│${prefix}cpf 
+│${prefix}cpf (off)
+│${prefix}cpffull
+│${prefix}cpfcompleto 
 │${prefix}placa
 │${prefix}ddd
 │${prefix}ddd2
