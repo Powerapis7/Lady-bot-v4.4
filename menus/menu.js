@@ -236,6 +236,6 @@ Informações do Dono do bot👑
 
 Dono: ${donoName}
 Número: ${donoNumber}
-
+Insta: @luanzn_fe
 `
  }
