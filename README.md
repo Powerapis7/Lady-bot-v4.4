@@ -80,7 +80,7 @@ cd /sdcard/Lady-bot-free-main && sh start.sh
 
 - **Update**: Canal onde será postado updates da ladybot-MD. ✨
 
-* [__Canal__](https://whatsapp.com/channel/0029ValLKgUAO7RCUU0dO03k)
+* [__Canal__](https://whatsapp.com/channel/0029Vb3AQtJ3AzNOz3mqx310)
 
 ## Features
 
