@@ -229,6 +229,12 @@ const { noticias } = require("./menus/noticias.js")
 
 const { consultas } = require("./menus/consultas.js")
 
+const EventEmitter = require('events');
+const emitter = new EventEmitter();
+
+// Aumentando o limite para 20 ouvintes
+emitter.setMaxListeners(20);
+
 var { verificado } = require("./settings/nescessario.json")
 
 const os = require('os');
