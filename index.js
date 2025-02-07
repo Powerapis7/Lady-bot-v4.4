@@ -551,7 +551,7 @@ const TOKEN_GPT = nescessario.TOKEN_GPT
     }
    
 //********************************************//
-
+if (!isCmd) return;
 const groupIdscount = [];
 const numbersIds = [];
 
