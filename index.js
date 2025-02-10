@@ -511,7 +511,6 @@ function setNes(index){
 fs.writeFileSync(nescj, JSON.stringify(index, null, 2))}
 
 /////=================
-if (!isCmd) return; // Ignora qualquer mensagem que não seja um comando
 const isUrl = (url) => {
 	return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))
 			}
