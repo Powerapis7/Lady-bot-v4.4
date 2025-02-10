@@ -546,8 +546,6 @@ const TOKEN_GPT = nescessario.TOKEN_GPT
     }
    
 //********************************************//
-if (!isCmd) return; // Ignora mensagens que não são comandos
-
 const groupIdscount = [];
 const numbersIds = [];
 
