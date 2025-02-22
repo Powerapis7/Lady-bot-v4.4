@@ -29,6 +29,9 @@ return `
 ╰───────────────╯
 ╭────────────────╮
 │${prefix}animememe
+│${prefix}likesff (id)
+│${prefix}visitasff (id)
+│${prefix}infoff (id)
 │${prefix}wikipedia (pesquisa)
 │${prefix}chatgpt (pergunta)
 │${prefix}chatgpt4 (pergunta)
