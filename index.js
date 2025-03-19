@@ -15,6 +15,8 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);
 });
+
+
 require("./dono.js")
 
 const { 
@@ -425,7 +427,16 @@ const content = JSON.stringify(info.message);
 const isCmd = body.startsWith(prefix)
 
 const isGroup = from.endsWith("@g.us")
+function processarComando(info, isCmd, body) {
+    if (!isCmd) return; // Ignora mensagens que não são comandos
 
+    const command = body.slice(1).trim().split(/ +/).shift().toLowerCase();
+    
+    // Aqui você pode adicionar a lógica para executar o comando
+    console.log(`Comando detectado: ${command}`);
+    
+    return command; // Retorna o comando caso precise usar depois
+}
 
 // Render de Jogos
 gayzin = gayzão
@@ -700,9 +711,7 @@ key: info.key
 } 
 loli.sendMessage(idgp, reactionMessage)
 }
-const mess = {
-    floodCommands: () => '⚠️ Você está enviando comandos muito rápido! Aguarde um momento.'
-};
+
 const mencionarIMG = (teks= '', Url, ms) => {
 memberr = []
 vy = teks.includes('\n') ? teks.split('\n') : [teks]
@@ -1741,7 +1750,7 @@ if (!isCreator) return loli.sendMessage(from, {text: 'somente dono'})
 loli.sendMessage(from, {image: fs.readFileSync('./loli/image/menu.jpg'), caption: '𝑺𝑨𝑵𝑫𝑹𝑶-𝑩𝑶𝑻⃟🥂'},{quoted: info})
 break
 
-case 'video2':
+case 'video':
 if (!isCreator) return loli.sendMessage(from, {text: 'somente dono'})
 loli.sendMessage(from, {video: fs.readFileSync('./loli/video/cantada brabakkkkk.mp4'), caption: '𝑺𝑨𝑵𝑫𝑹𝑶-𝑩𝑶𝑻⃟🥂'},{quoted: info})
 break
@@ -10938,192 +10947,7 @@ break
  const nunuteama = `https://553555.sirv.com/Images/TextPro.me_167268ff0c4034.jpg?text.0.text=${encodeURIComponent(feliznatalnunu)}&text.0.position.gravity=center&text.0.size=50&text.0.color=7bf800&text.0.font.family=Acme&text.0.outline.color=00ffea&text.0.outline.width=5`
   loli.sendMessage(from, { image: { url: nunuteama } }, { quoted: info })
   break
-case 'p1':
-case 'playaud':
-if(!q) return reply(`informe o nome da música`)
-try {
-reply(`Baixando o audio solicitado...`);
-
-await loli.sendMessage(from, {audio: {url:`https://carisys.online/api/downloads/youtube/play_audio?query=${encodeURIComponent(q)}`}, mimetype: "audio/mpeg"}, {quoted: info})
-} catch (erro) {
-console.log(erro)
-return reply(`Deu um pequeno erro, tente novamente mais tarde`)
-}
-break;
-
-case 'audio':
-try {
-    if (!q) return reply(`Informe o nome da música ou o link`);
-    await reagir(from, '⏳');
-
-    let play2;
-
-    // Verifica se o usuário enviou um link
-    if (q.includes('youtube.com') || q.includes('youtu.be')) {
-        // Se for link, faz a busca diretamente pela URL
-        play2 = await fetchJson(`https://carisys.online/api/pesquisas/youtube?query=${encodeURIComponent(q)}`);
-    } else {
-        // Caso contrário, pesquisa pela string
-        play2 = await fetchJson(`https://carisys.online/api/pesquisas/youtube?query=${encodeURIComponent(q)}`);
-    }
-
-    await loli.sendMessage(from, {
-        audio: { url: `https://carisys.online/api/downloads/youtube/mp3-2?url=${play2.resultado.url}` },
-        fileName: play2.resultado.titulo + '.mpeg',
-        mimetype: "audio/mpeg",
-        contextInfo: { 
-            externalAdReply: {
-                title: play2.resultado.titulo,
-                body: `⌗ Lady Bot a melhor🐞 ⌗`,
-                mediaType: 1,
-                reviewType: "PHOTO",
-                thumbnailUrl: play2.resultado.imagem,
-                showAdAttribution: true,
-                renderLargerThumbnail: true,
-            },
-        },
-    }, { quoted: info });
-
-} catch (error) {
-    console.log(error);
-    return reply('Ocorreu um erro, tente novamente mais tarde!');
-}
-break;
-
-case 'video':
-try {
-    if (!q) return reply(`Informe o nome do vídeo ou o link`);
-    await reagir(from, '⏳');
-
-    let play2;
-
-    // Verifica se o usuário enviou um link
-    if (q.includes('youtube.com') || q.includes('youtu.be')) {
-        // Se for link, faz a busca diretamente pela URL
-        play2 = await fetchJson(`https://carisys.online/api/pesquisas/youtube?query=${encodeURIComponent(q)}`);
-    } else {
-        // Caso contrário, pesquisa pela string
-        play2 = await fetchJson(`https://carisys.online/api/pesquisas/youtube?query=${encodeURIComponent(q)}`);
-    }
-
-    await loli.sendMessage(from, {
-        video: { url: `https://carisys.online/api/downloads/youtube/mp4?url=${play2.resultado.url}` },
-        fileName: play2.resultado.titulo + '.mp4',
-        mimetype: "video/mp4",
-        contextInfo: { 
-            externalAdReply: {
-                title: play2.resultado.titulo,
-                body: `⌗ Lady Bot a melhor🐞 ⌗`,
-                mediaType: 1,
-                renderLargerThumbnail: true,
-                thumbnailUrl: play2.resultado.imagem,
-                showAdAttribution: true,
-            },
-        },
-    }, { quoted: info });
-
-} catch (error) {
-    console.log(error);
-    return reply('Ocorreu um erro, tente novamente mais tarde!');
-}
-break;
-
- case 'toanime': 
-case 'imagepraanime':
-if((isMedia && !info.message.videoMessage || isQuotedImage)) {
-try {
-dlmedia = isQuotedImage ? JSON.parse(JSON.stringify(info).replace('quotedM','m')).message.extendedTextMessage.contextInfo.message.imageMessage : info.message.imageMessage;
-owgi = await getFileBuffer(dlmedia, 'image');
-uploadServer = await uploader.pixhost(owgi)
-reply("Aplicando o efeito de anime na imagem");
-let ToanimeUrl = await getBuffer(`https://carisys.online/api/outros/toanime?url=${uploadServer.resultado}`)
-await loli.sendMessage(from, {image: ToanimeUrl}, {quoted: info})
-} catch (e) {
-return reply("Deu um pequeno erro, tente novamente mais tarde..");
-}
-} else {
-reply("Mencione uma imagem para atribuír o efeito.");
-}
-break;
-case 'megadl':
-try {
-if (!q.includes("mega.nz")) return reply(`Você esqueceu de colocar um link do *mega.nz* após o comando.`);
-
-reply('Realizando o download do arquivo!');
-await loli.sendMessage(from, {document: {url: `https://api.nexfuture.com.br/api/downloads/mega/dl?url=${encodeURIComponent(q)}`}, mimetype: "application/zip", fileName: "Nex Carisys"}, {quoted: info})
-} catch (error) {
-console.log(error);
-return reply('Ocorreu um pequeno erro, tente novamente mais tarde! ');
-}
-break
- case 'dicionario':
-try {
-if (!q) return reply('Coloque a palavra que deseja consultar no dicionário!');
-reagir(from, "📍");
-let dicio = await fetchJson(`https://carisys.online/api/pesquisas/dicionario?query=${encodeURIComponent(q)}`);
-
-await sabrina.sendMessage(from, 
-{image: {url: dicio.resultado.imagem}, 
-caption: dicio.resultado.significado}, {quoted: info});
-} catch (error) {
-console.log(error);
-return reply('Deu um pequeno erro, tente novamente mais tarde!');
-}
-break
-case 'playmix':
-case 'play_mix':
-case 'pmix':
-try {
-if(!q) return reply(`Coloque o título, por exemplo músicas internacionais`)
-const dataPmix = await fetchJson(`https://api.nexfuture.com.br/api/pesquisas/youtubemix?query=${encodeURIComponent(q)}`);
-reply(`Baixando os áudios solicitado...`);
-
-bla = `*🔎『𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊𝙎』🔍*
-*1° -* _*《${dataPmix.resultado[0].title}》*_
-*0:00 ❍──────── -${dataPmix.resultado[0].duration} ↻ ⊲ Ⅱ ⊳ ↺*
-${dataPmix.resultado[0].url}
-*2° -* _*《${dataPmix.resultado[1].title}》*_
-*0:00 ❍──────── -${dataPmix.resultado[1].duration} ↻ ⊲ Ⅱ ⊳ ↺*
-${dataPmix.resultado[1].url}
-*3° -* _*《${dataPmix.resultado[2].title}》*_
-*0:00 ❍──────── -${dataPmix.resultado[2].duration} ↻ ⊲ Ⅱ ⊳ ↺*
-${dataPmix.resultado[2].url}
-*4° -* _*《${dataPmix.resultado[3].title}》*_
-*0:00 ❍──────── -${dataPmix.resultado[3].duration} ↻ ⊲ Ⅱ ⊳ ↺*
-${dataPmix.resultado[3].url}` 
-await loli.sendMessage(from,{image: {url: dataPmix.resultado[0].image }, caption: bla}, 
-{quoted: info});
-
-await loli.sendMessage(from, {audio: 
-{url: `https://api.nexfuture.com.br/api/downloads/youtube/mp3-2?url=${dataPmix.resultado[0].url}`}, mimetype: "audio/mpeg"}, 
-{quoted: info});
-await loli.sendMessage(from, {audio: 
-{url: `https://api.nexfuture.com.br/api/downloads/youtube/mp3-2?url=${dataPmix.resultado[1].url}`}, mimetype: "audio/mpeg"}, 
-{quoted: info});
-await loli.sendMessage(from, {audio: 
-{url: `https://api.nexfuture.com.br/api/downloads/youtube/mp3-2?url=${dataPmix.resultado[2].url}`}, mimetype: "audio/mpeg"}, 
-{quoted: info});
-await loli.sendMessage(from, {audio: 
-{url: `https://api.nexfuture.com.br/api/downloads/youtube/mp3-2?url=${dataPmix.resultado[3].url}`}, mimetype: "audio/mpeg"}, 
-{quoted: info});
-} catch (error) {
-console.log(error)
-return reply(`Ocorreu um erro ao baixar algum mix.`)
-}
-break
- case 'mediafire':
-try {
-if(!q.includes("mediafire.com")) return reply("Faltando o link do mediafire para download do arquivo, cade?");
-let nex = await fetchJson(`https://api.nexfuture.com.br/api/downloads/mediafire/dl?url=${q}`)
-reply(`Enviando: ${nex.resultado.nome}\n\nPeso: ${nex.resultado.size}`)
-
-await loli.sendMessage(from, {document: 
-{url: nex.resultado.url}, mimetype: "application/"+nex.resultado.mime, fileName: nex.resultado.nome});
-} catch (error) {
-console.log(error)
-return reply("Deu um pequeno error, tente novamente mais tarde...")
-}
-break;		
+		
 	case 'play': case 'Play': case 'PLAY': case 'musica': case 'música': case 'music': {
     try {
         if (!q.trim()) return reply(`- Exemplo: ${prefix}play nome da música\na música será baixada, só basta escolher áudio ou vídeo, se não baixar, o YouTube privou de não baixarem, ou algo do tipo..`);
@@ -13830,7 +13654,7 @@ case "ytbemp3":
 }
 break;
 
-case "play2": case "playaudio2":
+case "play22": case "playaudio2":
 {
   if (!text) {
     return loli.sendMessage(
@@ -15144,7 +14968,7 @@ break;
 
 //case de cpf
 
-case "cpf": {
+case "cpf3": {
     if (!text) {
         return reply("Você precisa fornecer um número de CPF para consulta.");
     }
@@ -15157,32 +14981,26 @@ case "cpf": {
 
         const { data } = await axios.get(`https://carisys.online/api/consultas/cpf?query=${cpf}`);
         
-        if (!data || !data.resultado) {
+        if (!data || data.length === 0) {
             return reply("Nenhum dado encontrado para o CPF fornecido.");
         }
 
         // Extraindo informações da resposta da API
-        const resultado = data.resultado;
-        const cpfInfo = resultado.cpf || "Desconhecido";
-        const nome = resultado.nome || "Desconhecido";
-        const nascimento = resultado.data_nascimento || "Desconhecido";
-        const signo = resultado.signo || "Desconhecido";
-        const sexo = resultado.genero || "Desconhecido";
-        const mae = resultado.nome_mae || "Desconhecida";
-        const pai = resultado.nome_pai || "Desconhecido";
-
-        // Extraindo o primeiro endereço (caso haja mais de um)
-        const endereco = resultado.enderecos && resultado.enderecos[0] || {};
-        const logradouro = endereco.logradouro || "Desconhecido";
-        const bairro = endereco.bairro || "Desconhecido";
-        const cidade = endereco.cidade || "Desconhecida";
-        const estado = endereco.estado || "Desconhecido";
-        const cep = endereco.cep || "Desconhecido";
-
-        // Extraindo o primeiro telefone (caso haja mais de um)
-        const telefone = resultado.telefones && resultado.telefones[0] || {};
-        const telefoneCompleto = `${telefone.ddd || "Desconhecido"}${telefone.numero || "Desconhecido"}`;
-
+        const cpfInfo = data[0]?.cpf || "Desconhecido";
+        const nome = data[1]?.nome || "Desconhecido";
+        const nascimento = data[1]?.nascimento || "Desconhecido";
+        const signo = data[1]?.signo || "Desconhecido";
+        const sexo = data[1]?.sexo || "Desconhecido";
+        const mae = data[2]?.mae || "Desconhecida";
+        const pai = data[2]?.pai || "Desconhecido";
+        const logradouro = data[3]?.logradouro || "Desconhecido";
+        const bairro = data[3]?.bairro || "Desconhecido";
+        const cidade = data[3]?.cidade || "Desconhecida";
+        const estado = data[3]?.estado || "Desconhecido";
+        const pais = data[3]?.país || "Desconhecido";
+        const cep = data[3]?.cep || "Desconhecido";
+        const telefone = data[4]?.telefone || "Desconhecido";
+        
         // Montando a mensagem de resposta
         const message = `*Informações do CPF ${cpfInfo}:*\n` +
                         `- Nome: ${nome}\n` +
@@ -15191,9 +15009,9 @@ case "cpf": {
                         `- Sexo: ${sexo}\n` +
                         `- Mãe: ${mae}\n` +
                         `- Pai: ${pai}\n` +
-                        `- Endereço: ${logradouro}, ${bairro}, ${cidade} - ${estado}\n` +
+                        `- Endereço: ${logradouro}, ${bairro}, ${cidade} - ${estado}, ${pais}\n` +
                         `- CEP: ${cep}\n` +
-                        `- Telefone: ${telefoneCompleto}`;
+                        `- Telefone: ${telefone}`;
 
         reply(message);
     } catch (error) {
@@ -15258,7 +15076,7 @@ try {
 
 } break;
 
-case "cpf3": {
+case "cpf": {
     if (!text) {
         return reply("Você precisa fornecer um número de CPF para consulta.");
     }
@@ -15392,7 +15210,7 @@ case "placa": {
 
 } break;
 
-case "telefone3": {
+case "telefone": {
     if (!text) {
         return reply("Você precisa fornecer um número de telefone para consulta.");
     }
@@ -15481,6 +15299,7 @@ case "parentes": {
 
 } break;
 //case de telefone
+
 case "telefone2": {
     if (!text) {
         return reply("Você precisa fornecer um número de telefone para consulta.");
@@ -15494,26 +15313,30 @@ case "telefone2": {
 
         const { data } = await axios.get(`https://carisys.online/api/consultas/telefone?query=${telefone}`);
         
-        // Verifica se a API retornou os dados corretamente
-        if (!data || !data.status || !Array.isArray(data.resultado) || data.resultado.length === 0) {
+        if (!data || !data.status || !data.resultado) {
             return reply("Nenhum dado encontrado para o telefone fornecido.");
         }
 
-        // Extraindo informações da resposta da API com segurança
-        const info = data.resultado[0] || {};
+        // Extraindo informações da resposta da API
+        const nome = data.resultado[0]?.nome || "Desconhecido";
+        const cpfCnpj = data.resultado[0]?.["cpf/cnpj"] || "Desconhecido";
+        const logradouro = data.resultado[1]?.logradouro || "Desconhecido";
+        const numero = data.resultado[1]?.numero || "Desconhecido";
+        const complemento = data.resultado[1]?.complemento || "Desconhecido";
+        const bairro = data.resultado[1]?.bairro || "Desconhecido";
+        const cidade = data.resultado[1]?.cidade || "Desconhecida";
+        const estado = data.resultado[1]?.estado || "Desconhecido";
+        const cep = data.resultado[1]?.cep || "Desconhecido";
+        
+        // Montando a mensagem de resposta
         const message = `*Informações do Telefone ${telefone}:*\n` +
-                        `- Nome: ${info.nome ?? "Desconhecido"}\n` +
-                        `- CPF: ${info.cpf ?? "Desconhecido"}\n` +
-                        `- Gênero: ${info.genero ?? "Desconhecido"}\n` +
-                        `- Idade: ${info.idade ?? "Desconhecida"} anos\n` +
-                        `- Data de Nascimento: ${info.data_nascimento ?? "Desconhecida"}\n` +
-                        `- Nome da Mãe: ${info.nome_mae ?? "Desconhecido"}\n` +
-                        `- Nome do Pai: ${info.nome_pai ?? "Desconhecido"}\n` +
-                        `- Renda Mensal: ${info.renda_mensal ?? "Desconhecida"}\n` +
-                        `- DDD: ${info.ddd ?? "Desconhecido"}\n` +
-                        `- Número: ${info.numero_telefone ?? "Desconhecido"}\n` +
-                        `- Data de Inclusão: ${info.data_inclusao ?? "Desconhecida"}\n` +
-                        `- Classificação: ${info.classificacao ?? "Desconhecida"}`;
+                        `- Nome: ${nome}\n` +
+                        `- CPF/CNPJ: ${cpfCnpj}\n` +
+                        `- Endereço: ${logradouro}, Nº ${numero}, ${complemento}\n` +
+                        `- Bairro: ${bairro}\n` +
+                        `- Cidade: ${cidade}\n` +
+                        `- Estado: ${estado}\n` +
+                        `- CEP: ${cep}`;
 
         reply(message);
     } catch (error) {
@@ -15524,6 +15347,7 @@ case "telefone2": {
 break;
 
 //case de nome 
+
 case "nome2": {
     if (!text) {
         return reply("Você precisa fornecer um nome para consulta.");
@@ -15531,33 +15355,33 @@ case "nome2": {
 
     try {
         const nomeQuery = encodeURIComponent(text.trim());
+        
         const { data } = await axios.get(`https://carisys.online/api/consultas/nome?query=${nomeQuery}`);
-
-        if (!data || !data.status || !Array.isArray(data.resultado) || data.resultado.length === 0) {
+        
+        if (!data || !data.status || !data.resultado || data.resultado.length === 0) {
             return reply("Nenhum dado encontrado para o nome fornecido.");
         }
 
-        // Construindo a mensagem com todos os resultados
-        let message = `*Resultados para o nome "${text}":*\n\n`;
+        // Extraindo informações da resposta da API
+        const resultado = data.resultado[0];
+        const nome = resultado.nome || "Desconhecido";
+        const cpf = resultado.cpf || "Desconhecido";
+        const sexo = resultado.sexo || "Desconhecido";
+        const nascimento = resultado.nascimento || "Desconhecido";
+        
+        // Montando a mensagem de resposta
+        const message = `*Informações do Nome ${nome}:*\n` +
+                        `- CPF: ${cpf}\n` +
+                        `- Sexo: ${sexo}\n` +
+                        `- Nascimento: ${nascimento}`;
 
-        data.resultado.forEach((resultado, index) => {
-            message += `🔹 *Pessoa ${index + 1}:*\n` +
-                       `- Nome: ${resultado.name ?? "Desconhecido"}\n` +
-                       `- CPF: ${resultado.cpf ?? "Desconhecido"}\n` +
-                       `- Gênero: ${resultado.gender ?? "Desconhecido"}\n` +
-                       `- Nascimento: ${resultado.birth ? resultado.birth.trim() : "Desconhecido"}\n` +
-                       `- Idade: ${resultado.age ?? "Desconhecida"} anos\n` +
-                       `- Signo: ${resultado.sign ?? "Desconhecido"}\n\n`;
-        });
-
-        reply(message.trim());
+        reply(message);
     } catch (error) {
         console.error("Erro ao processar a solicitação:", error);
         return reply("Ocorreu um erro ao processar a solicitação. Por favor, tente novamente mais tarde.");
     }
 }
 break;
-
 //case de ip
 
 case "ip2": {
@@ -15661,7 +15485,7 @@ try {
 }
 }
 break;
-case "telefone": {
+case "telefone2": {
     if (!text) {
         return reply("Você precisa fornecer um número de telefone para consulta.");
     }
@@ -15705,7 +15529,7 @@ case "nome": {
         const nome = text.trim();
         const res = await fetchJson(`https://world-ecletix.onrender.com/api/consultas?type=nome&query=${encodeURIComponent(nome)}`);
         
-        if (!res || !res.status || !res.resultado || res.resultado === "0") {
+        if (!res || !res.status || !res.resultado) {
             return reply("Nenhum dado encontrado para o nome fornecido.");
         }
 
@@ -15956,7 +15780,7 @@ case 'cep2': {
     }
 }
 break; 
-case "placa":
+case "placa2":
 {
     if (!text) {
         return reply("Você precisa fornecer uma placa para consulta.");
